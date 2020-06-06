@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- スマホでも表示できるように幅調整 -->
+<title> お問い合わせ | PENGUIN CAFE</title>
+<link rel="stylesheet" href="css/style.css"
+</head>
+<body>
+<div class="wrapper">
+  <!-- ここからヘッダー -->
+  <header class="header">
+    <h1 class="logo"><a href="https://www.carp.co.jp/" target="_blank"><img src="images/donald2-min.jpg" width ="300" height="300" alt="PENGUIN CAFE"></a></h1>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="about.html">店舗案内</a></li>
+        <li><a href="access.html">アクセス</a></li>
+        <li><a href="menu.html">メニュー</a></li>
+        <li><a href="contact.html">お問い合わせ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- ヘッダーここまで -->
+  <!-- ここからメイン -->
+  <main>
+    <h2>お問い合わせ</h2>
+    <form method="GET" action="result.html"> <!-- 通常，actionの属性の指定先は入力内容を送信するURL，すなわち処理プログラムのURLとなる． -->
+     <div class="human">
+        <label for="kind">当てはまるものを選んでください．</label><br><!-- プルダウン作成 -->
+        <select name="human_or_turtle">
+          <option value="man">男性</option>
+          <option value="woman">女性</option>
+          <option value="turtle">かめ</option>
+          <option value="penguin">ぺん</option>
+        </select>
+      </div>
+      <div>
+        <label for="kind">お問い合わせの種類</label><br><!-- プルダウン作成 -->
+        <select id ="kind" name="kind">
+          <option value="reservation">ご予約</option>
+          <option value="event">イベントについて</option>
+          <option value="contact">その他のお問い合わせ</option>
+        </select>
+      </div>
+      <div> <!--  ラジオボタンとチェックボックス作成 -->
+        PENGUIN CAFEに御来店いただいたことはありますか．<br>
+        <label><input type="radio" name="first" value="yes" checked>
+        はい</label>
+        <label><input type="radio" name="first" valie="no">
+        いいえ</label>
+      </div>
+      <div> <!-- もう一つラジオボックス -->
+        当カフェをお知りになったきっかけは？<br>
+        <label><input type="checkbox" name="how" value="friends">知り合いの紹介</label> <!-- 同じ質問に対しては同じname属性をつけなければならない  -->
+        <label><input type="checkbox" name="how" value="magazine">雑誌，Webサイトでみて</label>
+      </div>
+      <div>
+        <label>お問い合わせの件名<br>
+        <input type="text" name="subject" placeholder-"お問い合わせ"></label>
+      </div>
+      <div>
+        <label>お問い合わせの具体的な内容<br>
+        <textarea name="message"></textarea></label>
+      </div>
+      <div>
+        <input type="submit" name="submit" valiue="送信">
+      </div>
+    </form>
+  </main>
+  <!-- メインここまで -->
+  <!-- ここからフッター -->
+  <footer class="footer">
+    <p>&copy;Copyright PENGUIN CAFE. ALL rights reserved.</p>
+  </footer>
+  <!-- フッターここまで -->
+</div>
+</body>
+</html>
