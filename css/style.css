@@ -142,22 +142,6 @@ video{ /* 動画のサイズをボックスの幅に合わせて調整する，�
   vertical-align: top;
 }
 
-/* menu html */
-/*画像を横に並べる*/
-.menu-item{
-  display: flex;/*フレックスボックスで画像と文章を横に並べる*/
-  bourder-bottom: 1px dashed #bec2c7;
-  padding: 20px 8px;
-}
-/*menu-itemの子要素のmenu-photoとmenu-textが横に並ぶ*/
-.menu-photo{
-  margin-right: 16px;
-  flex: 1 1 auto;　 /*横幅を伸縮させたいものにはこう書く*/
-}
-.menu-text{
-  flex: 0 0 336px;　/*横幅を固定したいものにはこう書く，横幅は336px指定*/
-}
-
 /* access.html */
 .map{
   text-align: center;
