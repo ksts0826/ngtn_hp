@@ -44,11 +44,14 @@ a:hover{
 a:active{
   color:#ff6a3b;
 }
-img{ /* 画像のサイズを調整する */
+img{ /* 画像のサイズをボックスの幅に合わせて調整する，ほぼ必須 */
   max-width: 100%;
   height: auto;
 }
-
+video{ /* 動画のサイズをボックスの幅に合わせて調整する，ほぼ必須 */
+  max-width: 100%;
+  height: auto;
+}
 /*全てのページに適用　ヘッダー*/
 .logo{
   margin: 50px 0 40px 0;
@@ -101,7 +104,21 @@ img{ /* 画像のサイズを調整する */
 .news-item{ /* ニュースの部分の行間が埋まる*/
   margin: 0;
 }
-/* about html */
+/* puyopuyo html */
+.menu-item{
+  display: flex;/*フレックスボックスで画像と文章を横に並べる*/
+  bourder-bottom: 1px dashed #bec2c7;
+  padding: 20px 8px;
+}
+/*menu-itemの子要素のmenu-photoとmenu-textが横に並ぶ*/
+.menu-photo{
+  margin-right: 16px;
+  flex: 1 1 auto;　 /*横幅を伸縮させたいものにはこう書く*/
+}
+.menu-text{
+  flex: 0 0 336px;　/*横幅を固定したいものにはこう書く，横幅は336px指定*/
+}
+
 .shop-photo{
   float: left;
   padding: 0 1em 1em 0;
@@ -126,17 +143,19 @@ img{ /* 画像のサイズを調整する */
 }
 
 /* menu html */
+/*画像を横に並べる*/
 .menu-item{
-  display: flex;
+  display: flex;/*フレックスボックスで画像と文章を横に並べる*/
   bourder-bottom: 1px dashed #bec2c7;
   padding: 20px 8px;
 }
+/*menu-itemの子要素のmenu-photoとmenu-textが横に並ぶ*/
 .menu-photo{
   margin-right: 16px;
-  flex: 1 1 auto;
+  flex: 1 1 auto;　 /*横幅を伸縮させたいものにはこう書く*/
 }
 .menu-text{
-  flex: 0 0 336px;
+  flex: 0 0 336px;　/*横幅を固定したいものにはこう書く，横幅は336px指定*/
 }
 
 /* access.html */
