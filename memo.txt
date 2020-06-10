@@ -1,9 +1,0 @@
-<!-- URL: http://yprgtr.web.fc2.com/ -->
-<!--FTP PASS	V@CcTk0X?7
-ユーザ名　yprgtr
-ホスト名（ホストアドレス）
-yprgtr.web.fc2.com
-
-アクティブモードで接続する場合のホスト名
-ftp-server011.web.fc2.com
--->
