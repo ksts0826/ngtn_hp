@@ -52,6 +52,19 @@ video{ /* 動画のサイズをボックスの幅に合わせて調整する，�
   max-width: 100%;
   height: auto;
 }
+.article-item{
+  display: flex;/*フレックスボックスで画像と文章を横に並べる*/
+  bourder-bottom: 1px dashed #bec2c7;
+  padding: 20px 8px;
+}
+/*menu-itemの子要素のmenu-photoとmenu-textが横に並ぶ*/
+.article-photo{
+  margin-right: 16px;
+  flex: 1 1 auto;　 /*横幅を伸縮させたいものにはこう書く*/
+}
+.article-text{
+  flex: 0 0 336px;　/*横幅を固定したいものにはこう書く，横幅は336px指定*/
+}
 /*全てのページに適用　ヘッダー*/
 .logo{
   margin: 50px 0 40px 0;
@@ -103,20 +116,6 @@ video{ /* 動画のサイズをボックスの幅に合わせて調整する，�
 }
 .news-item{ /* ニュースの部分の行間が埋まる*/
   margin: 0;
-}
-/* puyopuyo html */
-.menu-item{
-  display: flex;/*フレックスボックスで画像と文章を横に並べる*/
-  bourder-bottom: 1px dashed #bec2c7;
-  padding: 20px 8px;
-}
-/*menu-itemの子要素のmenu-photoとmenu-textが横に並ぶ*/
-.menu-photo{
-  margin-right: 16px;
-  flex: 1 1 auto;　 /*横幅を伸縮させたいものにはこう書く*/
-}
-.menu-text{
-  flex: 0 0 336px;　/*横幅を固定したいものにはこう書く，横幅は336px指定*/
 }
 
 .shop-photo{
